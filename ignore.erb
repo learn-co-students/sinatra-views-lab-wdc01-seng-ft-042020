@@ -1,0 +1,50 @@
+<%= "I love " + "Ruby!!" %>
+<%= 1 + 1 %>
+<h1><%= "I love " + "Ruby!!" %></h1>
+
+
+<% if logged_in? %>
+  <a href="/logout">Click here to Log Out</a>
+<% else %>
+  <a href="/login">Click here to Log In</a>
+<% end %>
+
+<%= "I love " + "Ruby!!" %>
+<ol>
+<li><%= 1 + 1 %></li>
+<li><%= 1 + 1 %></li>
+</ol>
+
+<% if 1 == 1 %>
+  <p>1 equals 2.</p>
+<% else %>
+  <p>1 does not equal 2.</p>
+<% end %>
+
+<ul>
+  <% squares = [1, 4, 9, 16] %>
+  <% squares.each do |square| %>
+    <li><%= square %></li>
+  <% end %>
+</ul>
+
+<ul>
+  <li>1</li>
+  <li>4</li>
+  <li>9</li>
+  <li>16</li>
+</ul>
+
+<% wall_posts = ["First post!", "Second post!", "Hello, it's your mother. Why don't you ever call me?"] %>
+
+<ul>
+  <% wall_posts.each do |post| %>
+    <li><%= post %></li>
+  <% end %>
+</ul>
+
+<ul>
+  <li>First Post!</li>
+  <li>Second Post!</li>
+  <li>Hello, it's your mother. Why don't you ever call me?</li>
+</ul>
